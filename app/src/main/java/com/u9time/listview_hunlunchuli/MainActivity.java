@@ -9,6 +9,12 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+/**
+ * 本地新建项目可以为空,然后在github上创建仓库,并将仓库的clone到本地,将其中的git文件夹挪到项目地下
+ * 使用 git status看文件,git add --all添加文件,git commit -m "注释",再然后git push便提交到服务器上边了
+ * 删除本地项目,使用as的checkout将项目地址拉下来,便可以完成关联.有自己的代码提交记录,我擦,我终于学会了,摸索
+ * 真的挺慢的过程.
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
