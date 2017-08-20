@@ -49,6 +49,8 @@ class MyListViewAdapter extends BaseAdapter {
     public View getView(final int position, View convertView, ViewGroup parent) {
 
         ViewHolder viewHolder = null;
+
+        /*可用我们自己传入集合的时候的list中的bean对象,修改其中的字段即可,有时候没有的话我们可以自己添加字段的*/
         Student itemStudent = (Student) getItem(position);
 
         if (convertView == null) {
@@ -96,6 +98,7 @@ class MyListViewAdapter extends BaseAdapter {
 
         }
 
+/*-----------------------------------------------------------------------------------------------------*/
         /**
          *一下做法完全的错误,是行不通的!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
          */
@@ -110,18 +113,22 @@ class MyListViewAdapter extends BaseAdapter {
                 }
             }
         });
-
+/*-----------------------------------------------------------------------------------------------------*/
 
         viewHolder.tv.setText(arrayList.get(position));
         /**
          * 以下是为了item的背景色状态
          */
+
         if (position < 3) {
             viewHolder.tv.setBackgroundColor(Color.parseColor("#55ff0000"));
         } else {
             viewHolder.tv.setBackgroundColor(Color.parseColor("#ffffff"));
         }
 
+        /**
+         * 注意这里实在设置数据呢.
+         */
         viewHolder.cb.setChecked(itemStudent.isAdu);
 
         return convertView;
@@ -133,6 +140,7 @@ class MyListViewAdapter extends BaseAdapter {
         Button btn;
         Button btn_dianzan;
     }
+
 
     public OnBtnOnclickListener mOnBtnOnclickListener;
 

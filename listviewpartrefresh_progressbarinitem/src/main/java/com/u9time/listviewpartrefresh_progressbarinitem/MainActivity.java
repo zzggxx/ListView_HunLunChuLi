@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.ListView;
 
 /**
- * 此局部刷新的案例是有问题的.
+ * 此局部刷新的案例是有问题的.以后就不要看了
  */
 public class MainActivity extends AppCompatActivity implements MyAdapter.UpdateCallback {
 
@@ -25,9 +25,15 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.UpdateC
 
         listView.setAdapter(myAdapter);
 
+        // TODO: 2017/8/18 测试哈
         initMyAdapterData();
     }
 
+    /**
+     * 这是一种思路方式,也就是说有很多种的添加数据的方式,但是总之而言要注意两点:
+     * 1,先添加集合而后在修改数据,对于刷新或者加载更多有意义
+     * 2,类对象是adapter.
+     */
     private void initMyAdapterData() {
         for (int i = 0; i < 20; i++) {
             Model model = new Model(i, "Click--");
