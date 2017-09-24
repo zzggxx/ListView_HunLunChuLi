@@ -37,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
         myListViewAdapter.setmOnBtnOnclickListener(new MyListViewAdapter.OnBtnOnclickListener() {
             @Override
             public void onBtnOnclickListener(View view, int position) {
-                Toast.makeText(MainActivity.this, "我是item中的子控件,在activity中被调用了,失败adapter调用的", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "我是item中的子控件,在activity中被调用了," +
+                        "是adapter调用的,而不是listview调用的", Toast.LENGTH_SHORT).show();
             }
         });
 

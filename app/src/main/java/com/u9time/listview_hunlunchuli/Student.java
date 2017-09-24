@@ -7,6 +7,7 @@ package com.u9time.listview_hunlunchuli;
 public class Student {
     String name;
     int age;
+    boolean isAdu;
 
     public boolean isAdu() {
         return isAdu;
@@ -15,8 +16,6 @@ public class Student {
     public void setAdu(boolean adu) {
         isAdu = adu;
     }
-
-    boolean isAdu;
 
     public String getName() {
         return name;

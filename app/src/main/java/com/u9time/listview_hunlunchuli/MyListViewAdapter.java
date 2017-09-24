@@ -65,6 +65,8 @@ class MyListViewAdapter extends BaseAdapter {
 
             /**
              * 以下是为了在activity中使用点击事件,是拿到item中子控件的点击事件,同时可以传很多的值
+             *
+             * 点击的属性是可以被复用的,背景色也是可以被复用的
              */
             viewHolder.btn.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -79,6 +81,9 @@ class MyListViewAdapter extends BaseAdapter {
             viewHolder.cb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    /**
+                     * 这个地方需要将ConvertView中存的ViewHolder中的值进行了修改.不修改的话就不行的
+                     */
                     Student tag = (Student) finalViewHolder.cb.getTag();
                     tag.setAdu(buttonView.isChecked());
                 }
@@ -101,6 +106,7 @@ class MyListViewAdapter extends BaseAdapter {
 /*-----------------------------------------------------------------------------------------------------*/
         /**
          *一下做法完全的错误,是行不通的!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+         * 必须按照CheckBox的方法设置tag属性才行的
          */
         viewHolder.btn_dianzan.setTag(position);
         viewHolder.btn_dianzan.setText("需要填上不同的数据" + position);
@@ -117,7 +123,7 @@ class MyListViewAdapter extends BaseAdapter {
 
         viewHolder.tv.setText(arrayList.get(position));
         /**
-         * 以下是为了item的背景色状态
+         * 以下是为了item的背景色状态,颜色其实也是改变了属性值的,只是没有点选的方法我们就这么设置简单
          */
 
         if (position < 3) {
