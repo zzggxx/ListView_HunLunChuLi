@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Click_ChangeBackGroud/Click_ChangeBackGroud.iml" filepath="$PROJECT_DIR$/Click_ChangeBackGroud/Click_ChangeBackGroud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListView_CheckBox_Button_BackGround/ListView_CheckBox_Button_BackGround.iml" filepath="$PROJECT_DIR$/ListView_CheckBox_Button_BackGround/ListView_CheckBox_Button_BackGround.iml" />
       <module fileurl="file://$PROJECT_DIR$/ListView_HunLunChuLi.iml" filepath="$PROJECT_DIR$/ListView_HunLunChuLi.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/listviewpartrefresh_progressbarinitem/listviewpartrefresh_progressbarinitem.iml" filepath="$PROJECT_DIR$/listviewpartrefresh_progressbarinitem/listviewpartrefresh_progressbarinitem.iml" />
     </modules>
   </component>
 </project>

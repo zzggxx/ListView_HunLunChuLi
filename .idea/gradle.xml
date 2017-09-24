@@ -8,7 +8,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/Click_ChangeBackGroud" />
+            <option value="$PROJECT_DIR$/ListView_CheckBox_Button_BackGround" />
+            <option value="$PROJECT_DIR$/listviewpartrefresh_progressbarinitem" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
